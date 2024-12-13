@@ -16,9 +16,10 @@ const WeeklyPairing = ({ apiUrl }) => {
       try {
         const [pairsResponse, usersResponse] = await Promise.all([
           axios.get(`${apiUrl}/pairs`),
+
           axios.get(`${apiUrl}/users`),
         ]);
-        setPairs(pairsResponse.data.pairs);
+        console.log(pairsResponse), setPairs(pairsResponse.data.pairs);
         setUsers(usersResponse.data.users);
       } catch (err) {
         console.error("Error fetching data:", err);
@@ -99,7 +100,7 @@ const WeeklyPairing = ({ apiUrl }) => {
   );
 };
 WeeklyPairing.propTypes = {
-  apiUrl: PropTypes.string.isRequired, 
+  apiUrl: PropTypes.string.isRequired,
 };
 
 export default WeeklyPairing;
