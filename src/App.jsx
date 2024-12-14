@@ -27,7 +27,7 @@ function App() {
         Developed by:{" "}
         <span>
           {" "}
-          <a href="https://t.me/@jethior">Systemd</a>
+          <a href="https://t.me/jethior">Systemd</a>
         </span>{" "}
       </div>
     </>
