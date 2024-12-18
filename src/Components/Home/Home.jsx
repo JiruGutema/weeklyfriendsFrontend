@@ -40,11 +40,11 @@ const Home = ({ apiUrl }) => {
       <ul className="home-pairs-list">
         {pairs.map((pair, index) => (
           <li key={index} className="home-pair-item">
-            {pair[0]} {pair[1] && ` and ${pair[1]}`}
+            <span className="start">{pair[0]}</span>
+            <span className="end"> {pair[1]}</span>
           </li>
         ))}
       </ul>
-      
     </div>
   );
 };

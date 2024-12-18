@@ -1,0 +1,10 @@
+.home-pair-item {
+  display: flex;
+  justify-content: space-evenly;
+  padding: auto 30px;
+  text-shadow: 2px 2px 5px gray;
+}
+.home-pair-item span {
+  width: 100px;
+  text-align: start;
+}
