@@ -3,8 +3,14 @@ body {
   background-color: #f9f9f9;
   margin: 0;
   padding: 20px;
+
   text-align: center;
   justify-content: center;
+}
+body > * {
+  width: 90%;
+  max-width: 800px;
+  margin: auto;
 }
 h1 {
   color: #4a90e2;
@@ -43,7 +49,7 @@ input[type="text"] {
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
-  width: 400px;
+  width: 800px;
   margin-bottom: 10px;
 }
 button {
@@ -138,4 +144,15 @@ button:hover {
   color: #4a90e2;
   font-weight: bold;
   text-decoration: none;
+}
+.dataContainer {
+  display: flex;
+  justify-content: space-evenly;
+  padding: auto 30px;
+  text-shadow: 2px 2px 5px gray;
+}
+li .start,
+.end {
+  width: 100px !important;
+  text-align: start;
 }

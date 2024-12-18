@@ -74,8 +74,9 @@ const WeeklyPairing = ({ apiUrl }) => {
       {error && <p style={{ color: "red" }}>{error}</p>}
       <ul>
         {pairs.map((pair, index) => (
-          <li key={index}>
-            {pair[0]} {pair[1] && ` & ${pair[1]}`}
+          <li key={index} className="dataContainer">
+            <span className="start">{pair[0]}</span>
+            <span className="end"> {pair[1]}</span>
           </li>
         ))}
       </ul>
