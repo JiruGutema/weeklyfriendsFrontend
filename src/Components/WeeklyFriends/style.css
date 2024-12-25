@@ -3,34 +3,41 @@ body {
   background-color: #f9f9f9;
   margin: 0;
   padding: 20px;
-
   text-align: center;
-  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
 body > * {
   width: 90%;
   max-width: 800px;
   margin: auto;
 }
+
 h1 {
   color: #4a90e2;
   text-align: center;
   margin-bottom: 20px;
 }
+
 h2 {
   color: #333;
   margin-top: 30px;
   margin-bottom: 10px;
   text-align: center;
 }
+
 p {
   color: red;
   text-align: center;
 }
+
 ul {
   list-style-type: none;
   padding: 0;
 }
+
 li {
   background-color: #fff;
   margin: 5px 0;
@@ -40,18 +47,17 @@ li {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: auto;
-
   height: 50px;
-  margin-top: 10px;
 }
+
 input[type="text"] {
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
-  width: 800px;
+  width: calc(100% - 22px);
   margin-bottom: 10px;
 }
+
 button {
   background-color: #4a90e2;
   color: white;
@@ -61,15 +67,19 @@ button {
   cursor: pointer;
   transition: background-color 0.3s;
 }
+
 button:hover {
   background-color: #357abd;
 }
+
 .remove-button {
   background-color: #e74c3c;
 }
+
 .remove-button:hover {
   background-color: #c0392b;
 }
+
 .home-container {
   max-width: 800px;
   margin: 0 auto;
@@ -129,30 +139,52 @@ button:hover {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   background-color: #d1d8e0;
 }
-.maintanier {
+
+.maintainer {
   text-align: center;
   color: gray;
   font-weight: bold;
   margin-top: 100px;
 }
 
-.maintanier span {
+.maintainer span {
   color: #4a90e2;
   font-weight: bold;
 }
-.maintanier span a {
+
+.maintainer span a {
   color: #4a90e2;
   font-weight: bold;
   text-decoration: none;
 }
-.dataContainer {
+
+.data-container {
   display: flex;
   justify-content: space-evenly;
-  padding: auto 30px;
+  padding: 0 30px;
   text-shadow: 2px 2px 5px gray;
 }
+
 li .start,
 .end {
   width: 100px !important;
   text-align: start;
+  font-size: 24px;
+}
+.start {
+  color: lightseagreen;
+}
+.end {
+  color: lightskyblue;
+}
+@media (max-width: 500px) {
+  li,
+  ul,
+  input {
+    width: 100%;
+    padding: 10px;
+  }
+  #root > div {
+    width: 95%;
+  }
 }

@@ -41,6 +41,7 @@ const Home = ({ apiUrl }) => {
         {pairs.map((pair, index) => (
           <li key={index} className="home-pair-item">
             <span className="start">{pair[0]}</span>
+
             <span className="end"> {pair[1]}</span>
           </li>
         ))}

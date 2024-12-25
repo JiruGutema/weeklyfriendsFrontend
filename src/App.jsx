@@ -24,10 +24,14 @@ function App() {
         </Routes>
       </Router>
       <div className="maintanier">
+        <br />
+        <br />
+        <br />
+        <br />
         Developed by:{" "}
         <span>
           {" "}
-          <a href="https://t.me/jethior">Systemd</a>
+          <a href="https://t.me/sytemd_from_linux_kernel">Systemd</a>
         </span>{" "}
         <br />
         <br />
