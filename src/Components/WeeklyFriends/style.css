@@ -1,14 +1,20 @@
 body {
   font-family: "Arial", sans-serif;
-  background-color: #f9f9f9;
+  background-color: #242424;
   margin: 0;
   padding: 20px;
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 
+
+
+}
+#root {
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+
+
+}
 body > * {
   width: 90%;
   max-width: 800px;
@@ -39,11 +45,11 @@ ul {
 }
 
 li {
-  background-color: #fff;
+
   margin: 5px 0;
   padding: 10px;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  
+  border: 1px solid #ccc;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -53,7 +59,7 @@ li {
 input[type="text"] {
   padding: 10px;
   border: 1px solid #ccc;
-  border-radius: 5px;
+  
   width: calc(100% - 22px);
   margin-bottom: 10px;
 }
@@ -62,7 +68,7 @@ button {
   background-color: #4a90e2;
   color: white;
   border: none;
-  border-radius: 5px;
+  
   padding: 10px 15px;
   cursor: pointer;
   transition: background-color 0.3s;
@@ -81,14 +87,17 @@ button:hover {
 }
 
 .home-container {
+
+
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
-  background-color: #f9f9f9;
-  border-radius: 10px;
+  background-color: #242424;
+  border: 1px solid gray;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   font-family: "Arial", sans-serif;
   color: #333;
+
 }
 
 .home-title {
@@ -104,10 +113,10 @@ button:hover {
   margin-bottom: 20px;
   font-size: 1.1rem;
   color: #7f8c8d;
-  background: #eef2f3;
+  background: #242424;
   padding: 10px 15px;
   border-left: 4px solid #2c3e50;
-  border-radius: 5px;
+  
 }
 
 .home-error {
@@ -122,13 +131,17 @@ button:hover {
   padding: 0;
   margin: 0;
 }
+.home-pair-item a {
+  text-decoration: none;
+  color: white;
+}
 
 .home-pair-item {
   font-size: 1.2rem;
   margin: 10px 0;
   padding: 10px 15px;
-  border-radius: 5px;
-  background: #ecf0f1;
+  border: 1px solid gray;
+  background: #242424;
   color: #34495e;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s, box-shadow 0.2s;
@@ -137,7 +150,9 @@ button:hover {
 .home-pair-item:hover {
   transform: translateY(-3px);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  background-color: #d1d8e0;
+  background-color: #292929;
+
+ 
 }
 
 .maintainer {
@@ -177,14 +192,44 @@ li .start,
 .end {
   color: lightskyblue;
 }
+
+#admin-container {
+  display: flex;
+  justify-content:center;
+  gap: 20px;
+  flex-direction: row-reverse;
+  padding: 20px;
+  background-color: #242424;
+  border: 1px solid gray;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: "Arial", sans-serif;
+  color: #333;
+}
+.left {
+  overflow-y: scroll;
+  width: 300px;
+  color: white;
+  margin: 10px;
+}
+input {
+  background-color: #444444;
+  color: white;
+}
+.right {
+  flex-grow: 2;
+  margin: 10px;
+  color: white;
+  overflow-y: scroll;
+}
+#admin-container div {
+  max-height: 800px;
+}
 @media (max-width: 500px) {
-  li,
-  ul,
-  input {
-    width: 100%;
-    padding: 10px;
-  }
+
   #root > div {
     width: 95%;
+  }
+  #admin-container {
+    flex-direction: column;
   }
 }

@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import "./Home.css";
+import "../WeeklyFriends/style.css";
 import PropTypes from "prop-types";
 import axios from "../../Components/WeeklyFriends/axios";
 
@@ -40,9 +40,9 @@ const Home = ({ apiUrl }) => {
       <ul className="home-pairs-list">
         {pairs.map((pair, index) => (
           <li key={index} className="home-pair-item">
-            <span className="start">{pair[0]}</span>
+            <span className="start"><a href="https://jirugutema.netlify.app">{pair[0]}</a></span>
 
-            <span className="end"> {pair[1]}</span>
+            <span className="end"> <a href="https://jirugutema.netlify.app">{pair[1]}</a></span>
           </li>
         ))}
       </ul>

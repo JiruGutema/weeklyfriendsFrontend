@@ -69,8 +69,8 @@ const WeeklyPairing = ({ apiUrl }) => {
   }
 
   return (
-    <div>
-      <h1>Weekly Pairings</h1>
+    <div id="admin-container">
+      <div className="right"> <h1>Weekly Pairings</h1>
       {error && <p style={{ color: "red" }}>{error}</p>}
       <ul>
         {pairs.map((pair, index) => (
@@ -81,8 +81,9 @@ const WeeklyPairing = ({ apiUrl }) => {
             <span className="end"> {pair[1]}</span>
           </li>
         ))}
-      </ul>
-      <h2>Manage Users</h2>
+         <button onClick={resetPairs}>Reset Pairs</button>
+      </ul></div>
+     <div className="left">   <h2>Manage Users</h2>
       <input
         type="text"
         value={newUser}
@@ -99,7 +100,8 @@ const WeeklyPairing = ({ apiUrl }) => {
         ))}
       </ul>
       <button onClick={resetPairs}>Reset Pairs</button>
-    </div>
+    </div></div>
+   
   );
 };
 WeeklyPairing.propTypes = {

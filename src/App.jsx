@@ -23,7 +23,7 @@ function App() {
           />
         </Routes>
       </Router>
-      <div className="maintanier">
+      {/* <div className="maintanier">
         <br />
         <br />
         <br />
@@ -35,7 +35,7 @@ function App() {
         </span>{" "}
         <br />
         <br />
-      </div>
+      </div> */}
     </>
   );
 }
