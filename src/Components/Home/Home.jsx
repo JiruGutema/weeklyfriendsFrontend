@@ -30,11 +30,10 @@ const Home = ({ apiUrl }) => {
   }
 
   return (
-    <div className="home-container">
+    <div className="home-container" style={{ width: "70%", minWidth: "300px" }}>
       <h1 className="home-title">Weekly Friends</h1>
       <div className="home-verse">
-        Philippians 2:2 - Then make my joy complete by being like-minded, having
-        the same love, being one in spirit and of one mind.
+        
       </div>
       {error && <p className="home-error">{error}</p>}
       <ul className="home-pairs-list">
